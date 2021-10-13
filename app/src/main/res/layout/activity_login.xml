@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:contentDescription="Logo"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"/>
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:hint="Sahar Soffer"
+        android:textSize="18sp"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="22dp"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:autofillHints="name"
+        android:background="@drawable/input_bg"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:hint="***********"
+        android:textSize="18sp"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="22dp"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:autofillHints="name"
+        android:background="@drawable/input_bg"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Log In"
+        app:backgroundTint="@color/black"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/input_bg"/>
+
+</LinearLayout>
