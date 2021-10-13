@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AvailableCarsActivity">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/image_two"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_margin="25dp"/>
+
+    <TextView
+        android:id="@+id/tvAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Cars"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/ivBack"
+        android:layout_marginStart="25dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvAvailable"
+        android:layout_above="@+id/r1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/r1">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f0f0f0">
+        <ImageView
+            android:id="@+id/ivDash"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/image"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/tvBestMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best Match"
+            android:layout_toEndOf="@+id/ivDash"
+            android:textColor="@color/purple_500"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tvHighestPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highest Price"
+            android:layout_toEndOf="@+id/tvBestMatch"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tvLowestPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lowest Price"
+            android:layout_toEndOf="@+id/tvHighestPrice"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
