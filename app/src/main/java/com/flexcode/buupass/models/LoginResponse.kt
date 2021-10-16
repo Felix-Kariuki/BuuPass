@@ -1,4 +1,4 @@
-package com.flexcode.buupass
+package com.flexcode.buupass.models
 
 class LoginResponse {
 

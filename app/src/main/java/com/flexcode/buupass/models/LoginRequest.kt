@@ -1,4 +1,4 @@
-package com.flexcode.buupass
+package com.flexcode.buupass.models
 
 class LoginRequest {
     private var email: String? = null

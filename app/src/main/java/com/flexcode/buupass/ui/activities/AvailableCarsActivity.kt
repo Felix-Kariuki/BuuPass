@@ -1,4 +1,4 @@
-package com.flexcode.buupass
+package com.flexcode.buupass.ui.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

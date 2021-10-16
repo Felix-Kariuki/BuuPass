@@ -1,4 +1,4 @@
-package com.flexcode.buupass
+package com.flexcode.buupass.ui.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.flexcode.buupass.databinding.FragmentHomeBinding
+import com.flexcode.buupass.ui.activities.AvailableCarsActivity
 
 
 class HomeFragment : Fragment() {
@@ -22,7 +23,7 @@ class HomeFragment : Fragment() {
 
         val root: View = binding!!.root
         binding!!.cvAvailableCars.setOnClickListener {
-            val intent = Intent(context,AvailableCarsActivity::class.java)
+            val intent = Intent(context, AvailableCarsActivity::class.java)
             startActivity(intent)
         }
 

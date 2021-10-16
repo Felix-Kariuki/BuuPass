@@ -1,10 +1,12 @@
-package com.flexcode.buupass
+package com.flexcode.buupass.ui.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
 import android.widget.Toast
+import com.flexcode.buupass.api.ApiClient
+import com.flexcode.buupass.models.LoginRequest
+import com.flexcode.buupass.models.LoginResponse
 import com.flexcode.buupass.databinding.ActivityLoginBinding
 import retrofit2.Call
 import retrofit2.Callback

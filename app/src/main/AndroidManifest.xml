@@ -12,13 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BuuPass">
         <activity
-            android:name=".FireLoginActivity"
+            android:name=".ui.activities.FireLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".AvailableCarsActivity"
+            android:name=".ui.activities.AvailableCarsActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.activities.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.activities.MainActivity"
             android:exported="true" />
     </application>
 
