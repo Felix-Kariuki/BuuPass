@@ -10,78 +10,508 @@
         android:id="@+id/ivBack"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/image_two"
-        android:src="@drawable/ic_arrow_back"
-        android:layout_margin="25dp"/>
+        android:src="@drawable/ic_arrow_back" />
 
     <TextView
         android:id="@+id/tvAvailable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/ivBack"
+        android:layout_marginStart="25dp"
         android:text="Available Cars"
         android:textColor="@color/black"
         android:textSize="35sp"
-        android:textStyle="bold"
-        android:layout_below="@+id/ivBack"
-        android:layout_marginStart="25dp"/>
-    <androidx.recyclerview.widget.RecyclerView
+        android:textStyle="bold" />
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_below="@+id/tvAvailable"-->
+    <!--        android:layout_above="@+id/r1">-->
+    <!--        <androidx.cardview.widget.CardView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="180dp">-->
+    <!--            -->
+    <!--        </androidx.cardview.widget.CardView>-->
+    <!--    </androidx.recyclerview.widget.RecyclerView>-->
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/tvAvailable"
-        android:layout_above="@+id/r1">
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/r1">
+        android:orientation="vertical"
+        android:layout_above="@+id/r1"
+        android:layout_below="@+id/tvAvailable">
 
-        </androidx.recyclerview.widget.RecyclerView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvOne"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
 
-    </androidx.recyclerview.widget.RecyclerView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvDailyMonthly"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/tag"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Daily/Monthly"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/ivCarRv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/tvDailyMonthly"
+                    android:contentDescription="Car"
+                    android:src="@drawable/gari" />
+
+                <TextView
+                    android:id="@+id/tvFerrari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivCarRv"
+                    android:layout_marginStart="15dp"
+                    android:text="Alfa Romeo 4C"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFerrari"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="AEd 420"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPrice"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Per Week"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvTwo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvMonthly1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/tag"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Monthly"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/ivCarRv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/tvMonthly1"
+                    android:contentDescription="Car"
+                    android:src="@drawable/car2" />
+
+                <TextView
+                    android:id="@+id/tvRange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivCarRv4"
+                    android:layout_marginStart="15dp"
+                    android:text="Range Rover Sport"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvPrice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvRange"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="AEd 420"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPrice1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Per month"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvThree"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvOne"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvDaily"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/tag"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Daily"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/ivCarRv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/tvDaily"
+                    android:contentDescription="Car"
+                    android:src="@drawable/gari" />
+
+                <TextView
+                    android:id="@+id/tvAlfa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivCarRv3"
+                    android:layout_marginStart="15dp"
+                    android:text="Alfa Romeo 4C"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAlfa"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="AEd 380"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPrice2"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Per day"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvFour"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvTwo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvWeekly"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/tag"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Weekly"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/ivCarRv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/tvWeekly"
+                    android:contentDescription="Car"
+                    android:src="@drawable/car2" />
+
+                <TextView
+                    android:id="@+id/tvAlfa1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivCarRv1"
+                    android:layout_marginStart="15dp"
+                    android:text="Mercedes C300"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Price4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAlfa1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="AEd 420"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Price4"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Per month"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvFive"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvThree"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvMonthly2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/tag"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Monthly"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/ivCarRv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/tvMonthly2"
+                    android:contentDescription="Car"
+                    android:src="@drawable/car2" />
+
+                <TextView
+                    android:id="@+id/tvAlfa5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivCarRv5"
+                    android:layout_marginStart="15dp"
+                    android:text="Alfa Romeo 4C"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvPrice5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAlfa5"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="AEd 420"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPrice5"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Per month"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvSix"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvFour"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvMonthly"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/tag"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Monthly"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/ivCarRv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/tvMonthly"
+                    android:contentDescription="Car"
+                    android:src="@drawable/car2" />
+
+                <TextView
+                    android:id="@+id/tvAlfa7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivCarRv7"
+                    android:layout_marginStart="15dp"
+                    android:text="Alfa Romeo 4C"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvPrice7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAlfa7"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="AEd 420"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPrice7"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Per month"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
     <RelativeLayout
         android:id="@+id/r1"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:background="#f0f0f0">
+
         <ImageView
             android:id="@+id/ivDash"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/image"
             android:layout_marginStart="5dp"
-            android:backgroundTint="@color/purple_500"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:background="@drawable/image"
+            android:backgroundTint="@color/purple_500" />
+
         <TextView
             android:id="@+id/tvBestMatch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Best Match"
-            android:layout_toEndOf="@+id/ivDash"
-            android:textColor="@color/purple_500"
             android:layout_centerVertical="true"
             android:layout_marginStart="5dp"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:layout_toEndOf="@+id/ivDash"
+            android:text="Best Match"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/tvHighestPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Highest Price"
-            android:layout_toEndOf="@+id/tvBestMatch"
             android:layout_centerVertical="true"
             android:layout_marginStart="10dp"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:layout_toEndOf="@+id/tvBestMatch"
+            android:text="Highest Price"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/tvLowestPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lowest Price"
-            android:layout_toEndOf="@+id/tvHighestPrice"
             android:layout_centerVertical="true"
             android:layout_marginStart="10dp"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:layout_toEndOf="@+id/tvHighestPrice"
+            android:text="Lowest Price"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
 

@@ -250,6 +250,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/ivCarRv"
                     android:text="Alfa Romeo 4C"
+                    android:layout_marginStart="15dp"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -260,6 +261,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="15dp"
                     android:text="AEd 420"
+                    android:layout_marginStart="15dp"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -301,24 +303,28 @@
                     android:layout_below="@+id/tvMonthly"
                     android:contentDescription="Car"
                     android:src="@drawable/car2" />
+
                 <TextView
                     android:id="@+id/tvAlfa1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/ivCarRv1"
+                    android:text="Alfa Romeo 4C"
+                    android:layout_marginStart="15dp"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:text="Alfa Romeo 4C"/>
+                    android:textSize="18sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tvAlfa1"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="15dp"
-                    android:text="AEd 420"/>
+                    android:text="AEd 420"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
