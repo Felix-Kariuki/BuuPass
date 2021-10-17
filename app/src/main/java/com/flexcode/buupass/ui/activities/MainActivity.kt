@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar!!.hide()
 
         //retrieving user data
-        val userDataList = ApiClient.getUserService().getUserDetails()
+       /* val userDataList = ApiClient.getUserService().getUserDetails()
 
         userDataList!!.enqueue(object : Callback<List<UserResponse?>?> {
             override fun onResponse(
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             override fun onFailure(call: Call<List<UserResponse?>?>, t: Throwable) {
                 Log.e("success", t.localizedMessage)
             }
-        })
+        })*/
 
         val chip = findViewById<ChipNavigationBar>(R.id.chipNavigation)
         if (savedInstanceState == null) {
