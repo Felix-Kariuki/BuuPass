@@ -38,7 +38,6 @@ class LoginActivity : AppCompatActivity() {
         binding.btnFire.setOnClickListener {
             val intent = Intent(this@LoginActivity, FireLoginActivity::class.java)
             startActivity(intent)
-            finish()
         }
     }
 

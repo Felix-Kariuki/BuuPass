@@ -21,8 +21,10 @@ class ProfileFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         _binding = FragmentProfileBinding.inflate(inflater,container,false)
+
+
 
         val view = binding.root
         lifecycleScope.launchWhenCreated {
@@ -35,7 +37,7 @@ class ProfileFragment : Fragment() {
                 for (user in users.data) {
                     /*sb.append(user.first_name)
                     sb.append("\n")*/
-                    if (user.first_name == "Eve"){
+                    if (user.id == 2){
                         sb.append(user.first_name)
                         sb.append("\n")
                         sb.append(user.last_name)

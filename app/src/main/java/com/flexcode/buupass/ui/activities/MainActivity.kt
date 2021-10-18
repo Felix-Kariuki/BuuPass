@@ -2,20 +2,14 @@ package com.flexcode.buupass.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import com.flexcode.buupass.*
-import com.flexcode.buupass.api.ApiClient
 import com.flexcode.buupass.databinding.ActivityMainBinding
-import com.flexcode.buupass.models.UserResponse
 import com.flexcode.buupass.ui.fragments.HomeFragment
 import com.flexcode.buupass.ui.fragments.ProfileFragment
 import com.flexcode.buupass.ui.fragments.SearchFragment
 import com.flexcode.buupass.ui.fragments.SettingsFragment
 import com.ismaeldivita.chipnavigation.ChipNavigationBar
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
 
