@@ -5,13 +5,13 @@ Interview App for buuPass
 
 [Reqres Api](https://reqres.in/)
 
-##tools
+## tools
 
 *retrofit
 
 *kotlin
 
-#License and Copyright
+# License and Copyright
 
 [LICENSE](LICENSE)
 
