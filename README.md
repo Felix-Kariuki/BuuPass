@@ -7,9 +7,9 @@ Interview App for buuPass
 
 ## tools
 
-*retrofit
+* retrofit
 
-*kotlin
+* kotlin
 
 # License and Copyright
 
